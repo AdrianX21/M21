@@ -4,7 +4,7 @@ description: |
   This plugin reads the edge history and shows all the resources that the user has consulted.
   I recommend using it via API to export the data more precisely, or work on a CSV.
     Ex.
-      SELECT User,visited_url,title,visit_count,last_visit_time,hidden FROM source(client_id=collection.request.client_id, flow_id=collection.flow_id,artifact='Custom.Windows.Applications.Edge.History') WHERE last_visit_time =~ "TIME"`
+      SELECT User,visited_url,title,visit_count,last_visit_time,hidden FROM source(client_id=collection.request.client_id, flow_id=collection.flow_id,artifact='Custom.Windows.Applications.Edge.History') WHERE last_visit_time =~ "TIME"
       
 parameters:
   - name: historyGlobs
